@@ -1,0 +1,59 @@
+﻿<Window x:Class="egzamin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:egzamin"
+        mc:Ignorable="d"
+        Title="Aplikacja Desktopowa" Height="450" Width="800" ResizeMode="CanMinimize">
+    <Grid Background="LightSteelBlue">
+        <!-- //https://github.com/dariusz-grubba -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="580*"/>
+            <ColumnDefinition Width="48*"/>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="102*"/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="White" BorderThickness="4,4,4,4" CornerRadius="6,6,6,6" HorizontalAlignment="Left" VerticalAlignment="Top" Height="240" Width="259" Margin="120,74,0,0">
+            <Label x:Name="Dane_pracownika" Content="Dane pracownika" HorizontalAlignment="Left" VerticalAlignment="Top" Background="LightSteelBlue" Margin="13,-20,0,0" FontSize="16">
+                <Label.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.OpacityMask>
+            </Label>
+        </Border>
+        <Label x:Name="Imie" Content="Imię" HorizontalAlignment="Left" Margin="135,102,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="Nazwisko" Content="Nazwisko" HorizontalAlignment="Left" Margin="135,140,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label Content="Stanowisko" HorizontalAlignment="Left" Margin="135,180,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="ImieInput" HorizontalAlignment="Left" Margin="225,104,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="26"/>
+        <TextBox x:Name="NazwiskoInput" HorizontalAlignment="Left" Margin="225,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="24"/>
+        <ComboBox x:Name="StanowiskoComboBox" HorizontalAlignment="Left" Margin="225,182,0,0" VerticalAlignment="Top" Width="135" Height="26">
+            <ComboBoxItem Content="Kierownik"/>
+            <ComboBoxItem Content="Starszy programista"/>
+            <ComboBoxItem Content="Młodszy programista"/>
+            <ComboBoxItem Content="Tester"/>
+        </ComboBox>
+        <Border BorderBrush="White" BorderThickness="4,4,4,4" CornerRadius="6,6,6,6" HorizontalAlignment="Left" VerticalAlignment="Top" Height="241" Width="258" Margin="402,74,0,0" Grid.ColumnSpan="3">
+            <Label x:Name="GenerowanieHasla" Content="Generowanie Hasła" HorizontalAlignment="Left" VerticalAlignment="Top" Background="LightSteelBlue" Margin="12,-20,0,0" FontSize="16">
+                <Label.OpacityMask>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Label.OpacityMask>
+            </Label>
+        </Border>
+        <Label x:Name="IleZnakow" Content="Ile znaków?" HorizontalAlignment="Left" Margin="416,103,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="ileZnakowInput" HorizontalAlignment="Left" Margin="507,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" Height="25" AutomationProperties.ItemType="Number" Grid.ColumnSpan="3"/>
+        <CheckBox x:Name="checkBox1" Content="Małe i wielkie litery" HorizontalAlignment="Left" Margin="427,160,0,0" VerticalAlignment="Top" FontSize="16" Grid.ColumnSpan="2"/>
+        <CheckBox x:Name="checkBox2" Content="Cyfry" HorizontalAlignment="Left" Margin="427,186,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <CheckBox x:Name="checkBox3" Content="Znaki specjalne" HorizontalAlignment="Left" Margin="427,212,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Button x:Name="button1" Content="Generuj hasło" HorizontalAlignment="Left" Margin="470,257,0,0" VerticalAlignment="Top" Width="122" Click="Button_Click" Height="31" Background="SteelBlue" BorderBrush="White" Foreground="White" FontSize="16" RenderTransformOrigin="0.515,0.539" Grid.ColumnSpan="2"/>
+        <Button x:Name="buttonZatwierdz" Content="Zatwierdź" HorizontalAlignment="Left" Margin="250,358,0,0" VerticalAlignment="Top" Height="29" Width="289" Background="SteelBlue" Foreground="White" BorderBrush="White" FontSize="16" Click="buttonZatwierdz_Click"/>
+        <Label x:Name="Podpis" Content="Dariusz Grubba" HorizontalAlignment="Left" Margin="336,10,0,0" VerticalAlignment="Top" FontSize="16"/>
+
+    </Grid>
+</Window>
