@@ -1,0 +1,3 @@
+Link do pobrania zadania egzaminacyjnego: https://mega.nz/file/b75BTAIb
+Klucz deszyfrujący umożliwiający pobranie: zSTita0QOm6_w3oJWTD60h54YPBcJm_IqDhN8DSV5TQ
+Instrukcja obsługi jest w pliku \Kursy-Framework\src\App.jsx
