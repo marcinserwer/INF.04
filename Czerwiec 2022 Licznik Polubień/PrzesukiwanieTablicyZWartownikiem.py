@@ -5,10 +5,10 @@ tablica = [random.randint(1, 100) for _ in range(50)]
 
 # ******************************************************
 #  nazwa funkcji: <PrzeszukiwanieTablicyZWartownikiem>
-#  argumenty: <arr> - <tablica 50 elementowa>
-#             <x> - <Szukana liczba>
-#  typ zwracany: <i>, <Indeks pod którym znaleziono liczbę>
-#  informacje: <opis>
+#  argumenty: <tablica> - <tablica 50 elementowa>
+#             <szukana> - <Szukana liczba>
+#  typ zwracany: <brak>
+#  informacje: <Przeszukiwanie Tablicy z Wartownikiem>
 #  autor: <Martin https://github.com/marcinserwer>
 # *****************************************************
 def PrzeszukiwanieTablicyZWartownikiem(tablica, szukana):
